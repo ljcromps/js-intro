@@ -1,0 +1,55 @@
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link rel="stylesheet" href="styles.css" />
+        <script>
+            const popupAlert = (alertText) => {
+                alert(alertText);
+            };
+
+            const consoleAlert = (consoleText) => {
+                console.log(consoleText);
+            };
+
+            const test = () => {
+                for (counter = 0; counter < 10; counter++) {
+                    console.log("THIS IS THE COUNTER", counter);
+                    consoleAlert("ZIGGY IS A CAT");
+                }
+            };
+
+            const testIf = () => {
+                for (counter = 0; counter < 100; counter++) {
+                    console.log(counter);
+                    if (counter === 2) {
+                        console.log("i've hit 2");
+                    } else if (counter === 4) {
+                        console.log("woah, a 4");
+                    }
+                }
+            };
+
+            const paragraphTest = () => {
+                const paragraph = document.getElementsByClassName("para");
+                return paragr;
+            };
+
+            paragraphTest();
+        </script>
+        <title>Document</title>
+    </head>
+    <body>
+        <div class="container">
+            <button onclick="{popupAlert('SOS')}" class="button">ALERT</button>
+            <button onclick="{popupAlert('ZIGGY IS FLUFFY')}" class="button">
+                ALERT
+            </button>
+            <button onclick="{test()}" class="button">CONSOLE</button>
+            <button onclick="{testIf()}" class="button">CONSOLE</button>
+            <p onclick="{paragraphTest()}" class="para">
+                yo we gonna click on this
+            </p>
+        </div>
+    </body>
+</html>
